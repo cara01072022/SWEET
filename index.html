@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657555504-6admd4Qn" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "กดรับด่วน เครดิตฟรีมาถึงคุณแล้ว",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://www.img.in.th/images/27c9f2448135f3aa9e8a11e3113b8b9d.png",
+        "size": "full",
+        "aspectRatio": "4:2"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "animated": true,
+            "url": "https://www.img.in.th/images/dc51c52efb68c7cef26b94a5d058d85d.jpg",
+            "aspectRatio": "4:4"
+          }
+        ],
+        "margin": "md",
+        "cornerRadius": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รับได้ทุกยูสแจกจริงแตกยับ",
+            "weight": "bold",
+            "margin": "md",
+            "align": "center",
+            "size": "lg",
+            "color": "#FFFFFF"
+          },
+          {
+            "type": "text",
+            "text": "กดที่ปุ่มรับเครดิตฟรีได้เลย",
+            "color": "#FFFFFF",
+            "align": "center",
+            "size": "md",
+            "margin": "sm",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "❤สมาชิกใหม่ ฝาก 300 รับ 450❤",
+            "color": "#FFFFFF",
+            "align": "center",
+            "size": "md",
+            "margin": "md",
+            "weight": "bold"
+          }
+        ],
+        "margin": "md",
+        "cornerRadius": "md",
+        "backgroundColor": "#000000",
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#ff9900",
+          "endColor": "#ff6600"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สมัครสมาชิก",
+            "align": "center",
+            "size": "xxl",
+            "color": "#FFFF99",
+            "weight": "bold"
+          }
+        ],
+        "spacing": "lg",
+        "margin": "lg",
+        "backgroundColor": "#00CCFF",
+        "cornerRadius": "md",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://www.autobetkub.com/"
+        },
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#ff9900",
+          "endColor": "#ff6600"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รับเครดิตฟรี 50",
+            "align": "center",
+            "size": "xxl",
+            "color": "#FFFF99",
+            "weight": "bold"
+          }
+        ],
+        "spacing": "xl",
+        "margin": "md",
+        "backgroundColor": "#00CCFF",
+        "cornerRadius": "md",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://bit.ly/3RSE2gt"
+        },
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#ff9900",
+          "endColor": "#ff6600"
+        }
+      }
+    ],
+    "backgroundColor": "#351d4d",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#151515",
+      "endColor": "#333333"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
